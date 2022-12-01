@@ -1,0 +1,52 @@
+{
+    "final_space": true,
+    "console_title": true,
+    "console_title_style": "folder",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "background": "#ff479c",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "style": "folder"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "background": "#61AFEF",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "display_stash_count": true,
+                        "display_upstream_icon": true
+                    }
+                },
+                {
+                    "type": "kubectl",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#2040a7",
+                    "properties": {
+                      "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+                    }
+                }
+            ]
+        }
+    ]
+}
